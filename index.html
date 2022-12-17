@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <!-- Favicon  -->
+    <link rel="shortcut icon" href="icons8-globe-africa-16.png" type="image/x-icon">
+
+    <!-- Style Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Form Section -->
+    <form name="form1" id="myForm" >
+
+        <!-- Email Section -->
+        <p class="para">Email</p>
+        <input id="emailCheck" onchange="emailValidate()" type="text" placeholder="Example@email.com" value="">
+        <div id="idMessage"></div>
+
+
+        <!-- Password Section -->
+        <p class="para">Password</p>
+        <input id="passwordCheck" onchange="passwordValidate()" type="password" placeholder="Your Password" value="">
+        <div id="passwordMessage"></div>
+
+
+        <!-- Check Section -->
+        <div id="allGood" onchange="checkValidate()"></div>
+
+            
+        <!-- Submit Button -->
+        <button id="submit"" type="submit" onclick="submitForm()" >Submit</button>
+
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html> 
